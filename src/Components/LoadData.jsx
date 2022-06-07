@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import UniversityTile from './UniversityTile';
+import NavigationButton from './NavigationButton';
 import * as FaIcons from 'react-icons/fa';
 import '../ComponentsCSS/LoadData.css'
 
@@ -24,6 +25,7 @@ function LoadData() {
     }
 
     //< UniversityTile university={university} key={index} />
+    //<FaIcons.FaArrowAltCircleRight size={50} onClick={RenderNextUniversities} className='next-button' />
 
     return (
         <div className='university-area-div'>
@@ -32,8 +34,9 @@ function LoadData() {
                     <div>< UniversityTile university={university} key={index} /> </div>
                 ))}
             </div>
-            <div>
-                <FaIcons.FaArrowAltCircleRight size={50} onClick={RenderNextUniversities} className='next-button' />
+            <div className='nav-area'>
+                <NavigationButton text='Next' onButtonClick={() => setIndex(index + 4)} />
+                <NavigationButton text='Previous' onButtonClick={() => setIndex(index - 4)} />
 
             </div>
 

@@ -16,6 +16,7 @@
 .university-area-div {
     display: flex;
     flex-direction: row;
+    color: #C2DED1;
 }
 
 .university-div {
