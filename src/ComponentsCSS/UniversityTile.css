@@ -1,0 +1,39 @@
+.university-image {
+    flex: flex-grow;
+    width: 20vw;
+    height: 30vh;
+    resize: contain;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+.university-block-div {
+    columns: 2;
+    column-gap: 5px;
+
+}
+
+.university-area-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.university-div {
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.university-info {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.university-name {
+    padding: 5px;
+}

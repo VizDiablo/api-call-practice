@@ -1,5 +1,6 @@
 import { findByLabelText } from '@testing-library/react';
 import React, { useState } from 'react';
+import '../ComponentsCSS/UniversityTile.css'
 
 function UniversityTile(props) {
     //const [university, setUniversity] = useState("");
@@ -10,9 +11,11 @@ function UniversityTile(props) {
     console.log(props);
 
     return <div className='university-div'>
-        <h2>{universityName} </h2>
+        <h2 className='university-name'>{universityName} </h2>
         <div className='university-info'>
-            <img className='university-image' src={universityImageURL} width='10px'></img>
+            <div>
+                <img className='university-image' src={universityImageURL} width='10px'></img>
+            </div>
             <div>
                 <h3>State: {university["state-province"] != null ? university["state-province"] : "N/A"}</h3>
                 <h3>Country: {university.country != null ? university.country : "N/A"}</h3>
