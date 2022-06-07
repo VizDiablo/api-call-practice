@@ -14,7 +14,7 @@ function App() {
       <h1>Universities</h1>
       <div className='app-main'>
         <Router>
-          <NavBar />
+          <StickyNavBar />
           <Routes>
             <Route path='/' />
           </Routes>
