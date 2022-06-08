@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import UniversityTile from './UniversityTile';
 import NavigationButton from './NavigationButton';
 import * as FaIcons from 'react-icons/fa';
-import '../ComponentsCSS/LoadData.css'
+import '../ComponentsCSS/LoadData.css';
+import '../ComponentsCSS/UniversityTile.css';
 
 function LoadData() {
-    const [isLoading, setIsLoading] = useState(true);
     const [data, setData] = useState([]);
     const [index, setIndex] = useState(4);
     const url = "http://universities.hipolabs.com/search?country=United+States";
@@ -20,18 +20,11 @@ function LoadData() {
             .catch((error) => console.log(error));
     }, []);
 
-    function RenderNextUniversities() {
-        setIndex(index + 4);
-    }
-
-    //< UniversityTile university={university} key={index} />
-    //<FaIcons.FaArrowAltCircleRight size={50} onClick={RenderNextUniversities} className='next-button' />
-
     return (
         <div className='university-area-div'>
             <div className='university-block-div'>
                 {dataToRender.map((university, index) => (
-                    <div>< UniversityTile university={university} key={index} /> </div>
+                    <div className='university-tile-div'>< UniversityTile university={university} key={index} /> </div>
                 ))}
             </div>
             <div className='nav-area'>

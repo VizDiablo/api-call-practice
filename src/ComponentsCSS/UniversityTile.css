@@ -5,6 +5,7 @@
     resize: contain;
     border: 1px solid black;
     margin-right: 10px;
+    object-position: left top;
 }
 
 .university-block-div {
@@ -37,4 +38,8 @@
 
 .university-name {
     padding: 5px;
+}
+
+.university-tile-div {
+    width: 40vw;
 }
