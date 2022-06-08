@@ -1,11 +1,10 @@
 .university-image {
-    flex: flex-grow;
     width: 20vw;
     height: 30vh;
-    resize: contain;
     border: 1px solid black;
     margin-right: 10px;
-    object-position: left top;
+    margin-left: 5px;
+    border-radius: 15px;
 }
 
 .university-block-div {
@@ -31,7 +30,9 @@
 .university-info {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+
     align-items: flex-start;
     justify-content: center;
 }
@@ -42,4 +43,9 @@
 
 .university-tile-div {
     width: 40vw;
+}
+
+.university-info-text {
+    width: 18vw;
+    resize: none;
 }

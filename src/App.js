@@ -3,6 +3,8 @@ import LoadData from './Components/LoadData';
 import StickyNavBar from './Components/StickyNavBar';
 import NavBar from './Components/PopOutNavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Reports from './Pages/Reports';
+import Support from './Pages/Support';
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
         <Router>
           <StickyNavBar />
           <Routes>
-            <Route path='/' />
+            <Route path='/reports' exact component={Reports} />
+            <Route path='/support' exact component={Support} />
           </Routes>
         </Router>
         <LoadData />
