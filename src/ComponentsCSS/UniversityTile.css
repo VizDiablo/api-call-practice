@@ -3,8 +3,9 @@
     height: 30vh;
     border: 1px solid black;
     margin-right: 10px;
-    margin-left: 5px;
+    margin-left: 10px;
     border-radius: 15px;
+    box-shadow: 1px 1px
 }
 
 .university-block-div {
