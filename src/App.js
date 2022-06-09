@@ -2,23 +2,25 @@ import './App.css';
 import LoadData from './Components/LoadData';
 import StickyNavBar from './Components/StickyNavBar';
 import NavBar from './Components/PopOutNavBar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Reports from './Pages/Reports';
-import Support from './Pages/Support';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import Reports from './pages/reports';
+import Support from './pages/support';
+import Header from './Components/Header';
 
 function App() {
   return (
     <div className="App">
-      <h1>Universities</h1>
+      <Header />
       <div className='app-main'>
-        <Router>
+        <BrowserRouter>
           <StickyNavBar />
           <Routes>
-            <Route path='/reports' exact component={Reports} />
-            <Route path='/support' exact component={Support} />
+            <Route path='/' element={<LoadData />} />
+            <Route path='/reports' element={<Reports />} />
+            <Route path='/support' element={<Support />} />
           </Routes>
-        </Router>
-        <LoadData />
+        </BrowserRouter>
+        {/* <LoadData /> */}
       </div>
     </div>
   );
