@@ -2,3 +2,12 @@
     display: flex;
     flex-direction: row-reverse;
 }
+
+.university-detail-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.more-university-info {
+    border: 1px solid black;
+}
