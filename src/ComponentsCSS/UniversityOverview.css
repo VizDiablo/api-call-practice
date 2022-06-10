@@ -1,0 +1,15 @@
+.nav-area {
+    align-items: center;
+    justify-items: center;
+}
+
+.university-area-div {
+    display: flex;
+    flex-direction: row;
+    color: #C2DED1;
+}
+
+.university-block-div {
+    columns: 2;
+    column-gap: 5px;
+}

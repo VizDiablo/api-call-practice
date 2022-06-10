@@ -10,3 +10,8 @@
     display: inline-block;
     font-size: 16px;
 }
+
+.nav-button:hover {
+    cursor: pointer;
+    color: #C2DED1;
+}

@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import UniversityTile from './UniversityTile';
 import NavigationButton from './NavigationButton';
-import * as FaIcons from 'react-icons/fa';
-import '../ComponentsCSS/LoadData.css';
-import '../ComponentsCSS/UniversityTile.css';
+import '../ComponentsCSS/UniversityOverview.css';
 
-function LoadData() {
+function UniversityOverview() {
     const [data, setData] = useState([]);
     const [index, setIndex] = useState(4);
     const url = "http://universities.hipolabs.com/search?country=United+States";
@@ -24,7 +22,7 @@ function LoadData() {
         <div className='university-area-div'>
             <div className='university-block-div'>
                 {dataToRender.map((university, index) => (
-                    <div className='university-tile-div'>< UniversityTile university={university} key={index} /> </div>
+                    <div className='university-tile-div'>< UniversityTile university={university} key={index} id={index} /> </div>
                 ))}
             </div>
             <div className='nav-area'>
@@ -37,4 +35,4 @@ function LoadData() {
     );
 }
 
-export default LoadData;
+export default UniversityOverview;

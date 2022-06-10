@@ -8,18 +8,6 @@
     box-shadow: 2px 2px black;
 }
 
-.university-block-div {
-    columns: 2;
-    column-gap: 5px;
-
-}
-
-.university-area-div {
-    display: flex;
-    flex-direction: row;
-    color: #C2DED1;
-}
-
 .university-div {
     border: 1px solid black;
     align-items: center;
